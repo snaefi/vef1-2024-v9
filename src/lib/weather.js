@@ -25,7 +25,7 @@ function parseResponse(data) {
   const allForecasts = [];
   for (let i = 0; i < time.length; i++) {
     /** @type string */
-    const _time = time[i];
+    const _time = time[i].slice(-5); //fá rétt format á tíma
 
     /** @type number */
     const _pre = precipitation[i];
